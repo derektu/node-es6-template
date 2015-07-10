@@ -6,10 +6,10 @@ var plumber = require('gulp-plumber');
 var path = require('path');
 
 var paths = {
-    es6: ['es6.lib/**/*.js'],
+    es6: ['lib/**/*.es6'],
     es5: 'lib',
     // Must be absolute or relative to source map
-    sourceRoot: path.join(__dirname, 'es6.lib'),
+    sourceRoot: path.join(__dirname, 'lib'),
 };
 gulp.task('build', function () {
     return gulp.src(paths.es6)
